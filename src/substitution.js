@@ -5,12 +5,10 @@
 
 const substitutionModule = (function () {
   // you can add any code you want within this function scope
- // Define the standard alphabet
- const standardAlphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+const standardAlphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   function substitution(input, alphabet, encode = true) {
     // your solution code here
-    // Validate the alphabet
-    if (!alphabet || alphabet.length !== 26 || new Set(alphabet).size !== 26) {
+  if (!alphabet || alphabet.length !== 26 || new Set(alphabet).size !== 26) {
       return false;
     }
 
@@ -33,8 +31,6 @@ const substitutionModule = (function () {
     });
 
     return result.join("");
-  }
-
   }
 
   return {
