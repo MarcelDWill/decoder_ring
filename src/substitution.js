@@ -37,5 +37,4 @@ const standardAlphabet = "abcdefghijklmnopqrstuvwxyz".split("");
     substitution,
   };
 })();
-
 module.exports = { substitution: substitutionModule.substitution };
